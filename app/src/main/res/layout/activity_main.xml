@@ -1,0 +1,173 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/txtnombre"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".MainActivity"
+    tools:layout_editor_absoluteX="0dp"
+    tools:layout_editor_absoluteY="3dp">
+
+    <EditText
+        android:id="@+id/txtgenero"
+        android:layout_width="0dp"
+        android:layout_height="45dp"
+        android:layout_marginTop="28dp"
+        android:layout_marginEnd="59dp"
+        android:layout_marginBottom="27dp"
+        android:ems="10"
+        android:inputType="text"
+        android:text=""
+        android:textSize="15dp"
+        app:layout_constraintBottom_toTopOf="@+id/txtfecha"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toEndOf="@+id/textView3"
+        app:layout_constraintTop_toBottomOf="@+id/textView"
+        app:layout_constraintVertical_bias="1.0" />
+
+    <ImageView
+        android:id="@+id/imageView"
+        android:layout_width="270dp"
+        android:layout_height="147dp"
+        android:layout_marginStart="76dp"
+        android:layout_marginTop="40dp"
+        android:layout_marginEnd="76dp"
+        android:layout_marginBottom="43dp"
+        app:layout_constraintBottom_toTopOf="@+id/txtnombr"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:srcCompat="@drawable/img" />
+
+    <TextView
+        android:id="@+id/txtnombr"
+        android:layout_width="61dp"
+        android:layout_height="25dp"
+        android:layout_marginStart="47dp"
+        android:layout_marginEnd="34dp"
+        android:layout_marginBottom="51dp"
+        android:text="Nombre"
+        android:textSize="15dp"
+        app:layout_constraintBottom_toTopOf="@+id/textView"
+        app:layout_constraintEnd_toStartOf="@+id/txtnom"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/imageView" />
+
+    <EditText
+        android:id="@+id/txtnom"
+        android:layout_width="0dp"
+        android:layout_height="46dp"
+        android:layout_marginEnd="58dp"
+        android:inputType="text"
+        android:text=""
+        android:textSize="15dp"
+        app:layout_constraintBottom_toTopOf="@+id/txtnombr"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toEndOf="@+id/txtnombr"
+        app:layout_constraintTop_toTopOf="@+id/txtnombr"
+        app:layout_constraintVertical_bias="0.434"
+        tools:ignore="DuplicateIds" />
+
+    <EditText
+        android:id="@+id/txtapellido"
+        android:layout_width="0dp"
+        android:layout_height="48dp"
+        android:layout_marginTop="25dp"
+        android:layout_marginEnd="44dp"
+        android:layout_marginBottom="25dp"
+        android:ems="10"
+        android:inputType="text"
+        android:text=""
+        android:textSize="15dp"
+        app:layout_constraintBottom_toTopOf="@+id/txtgenero"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toEndOf="@+id/textView"
+        app:layout_constraintTop_toBottomOf="@+id/txtnombr"
+        app:layout_constraintVertical_bias="1.0" />
+
+    <EditText
+        android:id="@+id/txtfecha"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="50dp"
+        android:ems="10"
+        android:inputType="text"
+        android:text=""
+        android:textSize="15dp"
+        app:layout_constraintBottom_toTopOf="@+id/btnActualizar"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toEndOf="@+id/textView4"
+        app:layout_constraintTop_toBottomOf="@+id/textView3" />
+
+    <TextView
+        android:id="@+id/textView"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="59dp"
+        android:layout_marginEnd="34dp"
+        android:layout_marginBottom="54dp"
+        android:text="Apellidos"
+        app:layout_constraintBottom_toTopOf="@+id/textView3"
+        app:layout_constraintEnd_toStartOf="@+id/txtapellido"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/txtnombr" />
+
+    <TextView
+        android:id="@+id/textView3"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="59dp"
+        android:layout_marginEnd="47dp"
+        android:layout_marginBottom="27dp"
+        android:text="Genero"
+        app:layout_constraintBottom_toTopOf="@+id/txtfecha"
+        app:layout_constraintEnd_toStartOf="@+id/txtgenero"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/textView" />
+
+    <TextView
+        android:id="@+id/textView4"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="15dp"
+        android:layout_marginEnd="20dp"
+        android:layout_marginBottom="1dp"
+        android:text="Fecha Nacimiento"
+        app:layout_constraintBottom_toBottomOf="@+id/txtfecha"
+        app:layout_constraintEnd_toStartOf="@+id/txtfecha"
+        app:layout_constraintHorizontal_chainStyle="packed"
+        app:layout_constraintStart_toStartOf="parent" />
+
+    <Button
+        android:id="@+id/btnActualizar"
+        android:layout_width="126dp"
+        android:layout_height="51dp"
+        android:layout_marginStart="87dp"
+        android:layout_marginEnd="87dp"
+        android:layout_marginBottom="9dp"
+        android:backgroundTint="#0074BD"
+        android:text="Guardar"
+        android:textColor="@android:color/white"
+        app:layout_constraintBottom_toTopOf="@+id/btnlista"
+        app:layout_constraintEnd_toEndOf="@+id/txtgenero"
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintStart_toStartOf="@+id/txtnombr"
+        app:layout_constraintTop_toBottomOf="@+id/txtfecha" />
+
+    <Button
+        android:id="@+id/btnlista"
+        android:layout_width="133dp"
+        android:layout_height="49dp"
+        android:layout_marginBottom="80dp"
+        android:backgroundTint="#0074BD"
+        android:text="Lista"
+        android:textColor="@android:color/white"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="@+id/btnActualizar"
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintStart_toStartOf="@+id/btnActualizar"
+        app:layout_constraintTop_toBottomOf="@+id/btnActualizar" />
+
+</androidx.constraintlayout.widget.ConstraintLayout>
